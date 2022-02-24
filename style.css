@@ -45,14 +45,14 @@ body{
     object-position: center;
 }
 .navlist{
-    width: 50%;
+    width: 70%;
     display: flex;
     /* margin-left: 1rem; */
     /* justify-content: center; */
     align-items: center;
 }
 .right_nav{
-    width: 50%;
+    width: 30%;
     text-align: right;
 }
 .navbar{
@@ -63,6 +63,22 @@ body{
     top: 0;
     z-index: 50;
 }
+
+/* #####hemburger##### */
+.hemburger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+.line{
+    width: 33px;
+    background: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
 #search{
     padding: 5px;
     font-size: 17px;
@@ -205,3 +221,38 @@ body{
     padding: 3px 0;
 }
 
+/* ####footer styling### */
+.footer{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 20px 0;
+}
+
+
+
+/* ####responsive#### */
+@media only screen and (max-width:1140px) {
+    .navlist{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        /* height: 2px; */
+    }
+    .right_nav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .hemburger{
+        display: block;
+    }
+    .hnav{
+        height: 52px;
+        /* padding-bottom: 1rem; */
+    }
+    .vclass{
+        opacity: 0;
+    }
+}
